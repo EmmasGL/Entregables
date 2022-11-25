@@ -1,0 +1,89 @@
+:root{
+    --primer-color:rgb(48,48,48);
+    --segundo-color:rgb(218,218,218);
+    --tercer-color:rgb(118,190,142);
+    --cuarto-color:rgb(255,255,175);
+    --quinto-color:rgb(151,217,233);
+    --sexto-color:rgb(0,140,141);
+    --septimo-color:rgb(254,128,69);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--primer-color);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+nav{
+    background-color: var(--segundo-color);
+    padding: 1em 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    margin: .5em;
+}
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.content section{
+    background-color: var(--tercer-color);
+}
+section h2{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: .9em 0;
+}
+section article{
+    background-color: var(--cuarto-color);
+    margin: 1em;
+    padding: 1em .5em;
+}
+section>article>p{
+    background-color: var(--quinto-color);  
+    padding: 2em 1em;
+    margin-bottom: .5em;
+} 
+article div{
+    background-color: var(--sexto-color);
+    text-align: center;
+    padding: 1em 0;
+}
+article div img{
+    width: 50%;
+    margin: 1em;
+}
+.content aside{
+    background-color: var(--septimo-color);
+}
+aside{
+    padding: 3em 1em;
+    text-align: center;
+}
+aside h3,aside h4{
+    background-color: var(--cuarto-color);
+    padding: .2em;
+}
+aside img{
+    width: 100%;
+}
+aside p{
+    margin-top: 1em;
+}
+footer{
+    background-color: var(--segundo-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
